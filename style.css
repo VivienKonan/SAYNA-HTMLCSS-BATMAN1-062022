@@ -1,6 +1,171 @@
-body{
-    background-image: url('Assets/Illustrations/Bathome1.png');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+
+/*____ Donner des caractéristiques à tous les éléments ajoutés par défaut en utilisant "*" margin 0: va annuler tous les marges internes ou externes par defaut.
+En gros ce style ôte toutes les marges et tous les rembourrages par défaut_____*/
+
+/* :root Pour définr les variables */
+
+:root{
+    --yellow-color: #FFFF00;
+    --yellow-light: #F1F841;
+    --blue-color: blue;
+    --white-color: white;
+    --green-color:green;
+    --pink-color: pink;
+    --brown-color: brown;
+
 }
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+/* Spécifier les caracteristique des h1 */
+h1{
+    color: white;
+    font-family: "Rajdhani";
+    font-weight: 400;
+    font-size: medium 16;
+}
+
+button{
+    font-family: "Rajdhani";
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+
+}
+
+/* margin: 0 auto; centre l'élément */
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* nav{
+    background-color: rgb(89, 88, 94);
+    ;
+} */
+
+/* Les propriétés du corps ou body  */
 body{
-    background-color: dimgrey;
+    background-color: black;
+    color: white;
+    font-family: "Space+Grotesk";
+    font-weight: 300;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+/* Design de la section HERO */
+
+#hero{
+    background-image: url('./Assets/Illustrations/Bathome1.png');
+    background-position: top center;
+    height: 800px;
+    background-repeat: no-repeat;
+
+}
+
+
+/* Design de la barre de navigation  */
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding:20px 0;
+}
+
+ul {
+    list-style:none;
+
+}
+.home{
+   color: rgb(255, 255, 255);
+
+}
+
+ nav a{
+     color: var(--white-color);   
+    color: rgb(126, 80, 11);
+    font-size: 30;
+    font-weight: 500; 
+    font-family: "Rajdhani";
+}
+
+/* hover permet de faire changer la couleur de l'élément lorsque la souris le survole */
+nav ul a:hover{
+color: var(--yellow-color);
+}
+
+/* Design de la partie entête hero */
+
+
+
+
+/*Design de la partie Batman au cinema */
+
+.personnages{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* #hero{
+    background-image: url('./Assets/Illustrations/Bathome1.png');
+    height: 800px;
+    background-repeat: no-repeat;
+    background-color: black;
+    background-position: top center; */
+/* } */
+
+/* .body{
+    background-color:none;
+    background-image: url('./Assets/Illustrations/Bathome1.png');
+    background-repeat: no-repeat;
+} */
+
+
+.seeeection1{
+    /* background-image: url(./Assets/Illustrations/Bathome1.png) */
+}
+.arrow{
+    background-color: black;
+    
+    position: relative;
+    margin:;
+    height:px;%;
+}
+.logo{
+    display: flex;
+    float:right;
+    margin: 10px 0;
+    height: 30%;
+    position: relative;
+    justify-content: center;
+    flex-direction:column; 
+    padding: 10%;
+    
+    /* block-size: 1px ; */
+}
+.log{
+    display: flexbox;
+    margin: auto;
+    display: block;
+    padding: 10;
+    
+
 }
