@@ -14,11 +14,13 @@ En gros ce style ôte toutes les marges et tous les rembourrages par défaut____
     --green-color:green;
     --pink-color: pink;
     --brown-color: brown;
-
+    --black-color: rgb(0, 0, 0);
+    --gradient-white:#eddebf44;
+    --gradient-red:#8900098c;
 }
 *{
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -30,63 +32,69 @@ h1{
     font-size: medium 16;
 }
 
-button{
+.btn {
     font-family: "Rajdhani";
     font-size: 20px;
     font-weight: 400;
-    text-align: center;
-
 }
-
 /* margin: 0 auto; centre l'élément */
-
 .container{
     width: 80%;
     margin: 0 auto;
 }
-
-/* nav{
-    background-color: rgb(89, 88, 94);
-    ;
-} */
-
 /* Les propriétés du corps ou body  */
 body{
     background-color: black;
     color: white;
-    font-family: "Space+Grotesk";
+    font-family: "Space Grotesk";
     font-weight: 300;
-    background-size: contain;
-    background-repeat: no-repeat;
-
 }
 /* Design de la section HERO */
-
 #hero{
     background-image: url('./Assets/Illustrations/Bathome1.png');
     background-position: top center;
     height: 800px;
     background-repeat: no-repeat;
-
+    background-color: azure;
+    background-size: cover;
 }
-
-
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 150px;
+}
+#hero .titre{
+    margin: 20px 0;
+}
+.btn{
+    margin-top: 30%;
+    text-decoration: none;
+    color:var(--white-color)
+    font-size: 22px;
+    padding: 10px 20px;
+    background: linear-gradient(
+        80deg,var(--gradient-white),var(--gradient-red)
+    );
+    box-shadown: var(--black-color) 5px 16px px ;
+}
 /* Design de la barre de navigation  */
-
 nav{
     display: flex;
     align-items: center;
     justify-content:space-between;
-    padding:20px 0;
+    padding:30px 0;
+    background-size: cover;
 }
 
-ul {
+ul{
     list-style:none;
-
 }
 .home{
    color: rgb(255, 255, 255);
-
 }
 
  nav a{
@@ -101,71 +109,262 @@ ul {
 nav ul a:hover{
 color: var(--yellow-color);
 }
-
-/* Design de la partie entête hero */
-
-
-
-
-/*Design de la partie Batman au cinema */
+.hover:hover{
+    filter: invert(4%) sepia(100%) saturate(6713%) hue-rotate(359deg) brightness(101%) contrast(101%);
+    -webkit-filter: invert(4%) sepia(100%) saturate(6713%) hue-rotate(359deg) brightness(101%) contrast(101%);
+}
+.loga:hover{
+    filter: invert(4%) sepia(100%) saturate(6713%) hue-rotate(359deg) brightness(101%) contrast(101%);
+    -webkit-filter: invert(4%) sepia(100%) saturate(6713%) hue-rotate(359deg) brightness(101%) contrast(101%);
+}
+    /*Design de la partie Batman au cinema */
 
 .personnages{
     display: flex;
     justify-content: space-between;
 }
 
-
-
-
-
-
-
-
-
-
-
-/* #hero{
-    background-image: url('./Assets/Illustrations/Bathome1.png');
-    height: 800px;
-    background-repeat: no-repeat;
-    background-color: black;
-    background-position: top center; */
-/* } */
-
-/* .body{
-    background-color:none;
-    background-image: url('./Assets/Illustrations/Bathome1.png');
-    background-repeat: no-repeat;
-} */
-
-
-.seeeection1{
-    /* background-image: url(./Assets/Illustrations/Bathome1.png) */
+/* Design de la fleche */
+#hero .arrow{
+    display: block;
+    margin:0 auto;
+    margin-top: 285px; 
 }
-.arrow{
-    background-color: black;
-    
-    position: relative;
-    margin:;
-    height:px;%;
-}
+/* Design des différents logos */
 .logo{
     display: flex;
-    float:right;
-    margin: 10px 0;
-    height: 30%;
-    position: relative;
-    justify-content: center;
-    flex-direction:column; 
-    padding: 10%;
-    
-    /* block-size: 1px ; */
+    flex-direction: column;
+    align-items: center;
+    position:fixed;
+    right: 5%;
+    top: 23%;
 }
-.log{
-    display: flexbox;
-    margin: auto;
-    display: block;
-    padding: 10;
-    
+.logo .log{
+    margin-top: 15px;
+}
+.log:hover{
+    filter: invert(4%) sepia(100%) saturate(6713%) hue-rotate(359deg) brightness(101%) contrast(101%);
+    -webkit-filter: invert(4%) sepia(100%) saturate(6713%) hue-rotate(359deg) brightness(101%) contrast(101%);
+}
+/* Design Batman image12 */
+/* .b12{
+    background-color: #F1F841 ;
+    position: absolute;
+    margin-top: 180%;
+    right: 80%;
+    top: 10%;
+} */
 
+#bcinema{
+    margin-top: 40px;
+}
+#bcinema .titre{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin 30px 0;
+    padding: 5px;
+}
+#bcinema .description{
+    margin-bottom: 40px;
+    text-align: justify;
+    width: 80%;
+    font-size: 21px;
+}
+#bcinema .info{
+    text-align: center;
+}
+/* Design de la partie Nemesis */
+#nemesis{
+    margin-top: 40px;
+}
+#nemesis .titre{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin 30px 0;
+    padding: 5px;
+}
+#nemesis .description{
+    margin-bottom: 40px;
+    text-align: justify;
+    width: 80%;
+    font-size: 21px;
+}
+#nemesis .info{
+    text-align: center;
+}
+/* Design de la partie Alliés */
+#allies{
+    margin-top: 40px;
+}
+#allies .titre{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin 30px 0;
+    padding: 5px;
+}
+#allies .description{
+    margin-bottom: 40px;
+    text-align: justify;
+    width: 80%;
+    font-size: 21px;
+}
+#allies .info{
+    text-align: center;
+}
+/* Design de la partie Justice league */
+#jleague{
+    margin-top: 40px;
+}
+#jleague .titre{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin 30px 0;
+    padding: 5px;
+}
+#jleague .description{
+    margin-bottom: 40px;
+    text-align: justify;
+    width: 80%;
+    font-size: 21px;
+}
+#jleague .info{
+    text-align: center;
+}
+/* Design de la partie Multi-Media */
+#multimedia .slide_multimedia{
+    display: flex;
+    width: 60%;
+    margin: 40px auto;
+}
+#multimedia .slide_image{
+    width: 100%;
+}
+#multimedia .slide_content{
+    padding: 15px;
+    background: #5a5858dc;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+#multimedia p{
+    font-size: 14px;
+}
+#multimedia button{
+    position: relative;
+    top: 155px;
+    background: none;
+}
+#multimedia button.droit{
+    right: -85%;
+}
+#multimedia .yellow{
+    color:var(--yellow-color)
+}
+/* Design de la partie Contact */
+#contact{
+    /* background: linear-gradient(var(--gradient-white)); */
+    background-color: darkslategray;
+    padding: 70px ;
+}
+#contact .form{
+    width: 50%;
+    margin:0 auto;
+}
+#contact h2{
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 32px;
+
+}
+#contact .titre{
+    display: block;
+    margin: 28px 0;
+}
+#contact .form input[type='email'], textarea{
+    display: block;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    width: 80%;
+    border-bottom: 2px solid rgb(120, 120, 120);
+    background: transparent;
+    padding: 10px 0;
+}
+#contact .news{
+    margin: 15px O;
+    border-bottom: 2px solid rgb(120, 120, 120);
+}
+#contact .icon img{
+    transform: rotate(90deg);
+    width: 20px;
+}
+::placeholder{
+    color:#F1F841;
+    font-size: 15px;
+}
+.btn-group{
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.form input[type='radio']{
+    opacity: 0;
+}
+.btn-group label{
+    cursor: pointer;
+    border: 2px solid;
+    padding: 10px;
+    border-image: linear-gradient(
+        60deg, rgb(158, 150, 150), blue
+    ) 1;
+    font-size: 20px;
+}
+input[type='submit']{
+    display: block;
+    width: 230px;
+    margin: 25px auto;
+    padding: 15px 0;
+    cursor: pointer;
+}
+/* Design de la partie citation */
+#citation{
+    margin: 90px;
+}
+#citation .citation_carte{
+    text-align: center;
+    width: 50%;
+    margin:0 auto;
+}
+#citation .citation_a{
+    padding-top: 30px;
+    font-size: 14px;
+    font-family: 'radjhani';
+}
+#citation .guillemets_f{
+    float: right;
+}
+/* Design du footer*/
+footer{
+    margin-top: 162px;
+}
+footer .text_footer{
+    text-align: center;
+    font-size: 15px;
+}
+footer .rs_footer{
+    text-align: center;
+    margin: 50px 0;
+}
+footer .rs{
+    padding: 10px;
+}
+footer .rss{
+    width: 10px;
+}
+.rs:hover{
+    filter: invert(4%) sepia(100%) saturate(6713%) hue-rotate(359deg) brightness(101%) contrast(101%);
+    -webkit-filter: invert(4%) sepia(100%) saturate(6713%) hue-rotate(359deg) brightness(101%) contrast(101%);
+}
+.rs1:hover{
+    filter: invert(4%) sepia(100%) saturate(6713%) hue-rotate(359deg) brightness(101%) contrast(101%);
+    -webkit-filter: invert(4%) sepia(100%) saturate(6713%) hue-rotate(359deg) brightness(101%) contrast(101%);
 }
